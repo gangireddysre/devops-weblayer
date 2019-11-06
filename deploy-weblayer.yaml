@@ -2,6 +2,7 @@
 - name: deployment of package in remote server
   hosts: web
   become: yes
+  user: root
 
   tasks:
   - name: stop the apache
